@@ -380,7 +380,16 @@
 					"hediet.vscode-drawio.defaultEdgeStyle": {
 						"title": "Default Edge Style",
 						"description": "Default styling of edges.",
-						"type": "object"
+						"type": "object",
+						"default": {
+							"edgeStyle": "orthogonalEdgeStyle",
+							"rounded": "0",
+							"jettySize": "auto",
+							"orthogonalLoop": "1",
+							"editable": 0,
+							"strokeWidth": 3,
+							"jumpStyle": "arc"
+						}
 					},
 					"hediet.vscode-drawio.colorNames": {
 						"title": "Color Names",
