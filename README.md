@@ -7,8 +7,8 @@ Mentioned in the official diagrams.net [blog](https://www.diagrams.net/blog/embe
 
 ## Features
 
--   Edit `.drawio`, `.dio`, `.drawio.svg` or `.drawio.png` files in the Draw.io editor.
-    -   To create a new diagram, simply create an empty `*.drawio`, `*.drawio.svg` or `*.drawio.png` file and open it.
+-   Edit `.drawio`, `.cmbt`, `.dio`, `.drawio.svg` or `.drawio.png` files in the Draw.io editor.
+    -   To create a new diagram, simply create an empty `*.drawio`, `*.cmbt`, `*.drawio.svg` or `*.drawio.png` file and open it.
     -   `.drawio.svg` are valid `.svg` files that can be embedded in Github readme files! No export needed.
     -   `.drawio.png` are valid `.png` files! No export needed. You should use `.svg` though whenever possible - they look much better!
     -   To convert between different formats, use the `Draw.io: Convert To...` command.

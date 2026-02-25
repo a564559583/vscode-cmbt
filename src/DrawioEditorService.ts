@@ -169,6 +169,7 @@ export class DrawioEditor {
 
 	private readonly knownDrawioFileExtensions: ReadonlyArray<string> = [
 		".drawio",
+		".cmbt",
 		".dio",
 		".drawio.svg",
 		".drawio.png",
@@ -297,7 +298,10 @@ export class DrawioEditor {
 					label: ".drawio",
 					description: "Converts the diagram to a drawio file",
 				},
-
+				{
+					label: ".cmbt",
+					description: "Converts the diagram to a cmbt file",
+				},
 				{
 					label: ".drawio.png",
 					description: "Converts the diagram to an editable png file",
