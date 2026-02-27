@@ -698,7 +698,7 @@ export class DiagramConfig {
 			return "zh-tw";
 		}
 		const lang = env.language.split("-")[0].toLowerCase();
-		return lang;
+		return "zh";
 	}
 }
 
