@@ -506,14 +506,13 @@ export class DiagramConfig {
 		);
 
 		const resizeImages = this.resizeImages;
-		const defaultLibraries = this.defaultLibraries;
 
 		try {
 			const drawioConfig = JSON.parse(localStorage[".drawio-config"]);
 			drawioConfig.resizeImages = resizeImages;
 			// Clear saved libraries when defaultLibraries changes
 			// This ensures defaultLibraries setting takes effect
-			drawioConfig.libraries = defaultLibraries;
+			drawioConfig.libraries = "MBT";
 			localStorage[".drawio-config"] = JSON.stringify(drawioConfig);
 		} catch (e) {
 			console.error(e);
@@ -562,11 +561,6 @@ export class DiagramConfig {
 		scope: this.uri,
 		serializer: serializerWithDefault<DrawioCustomLibrary[]>([]),
 	});
-
-	@computed
-	public get defaultLibraries(): string {
-		return "MBT";
-	}
 
 	@computed
 	public get customLibraries(): Promise<DrawioLibraryData[]> {
