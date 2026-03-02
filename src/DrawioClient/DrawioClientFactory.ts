@@ -93,7 +93,7 @@ export class DrawioClientFactory {
 					defaultEdgeStyle: config.defaultEdgeStyle,
 					colorNames: config.colorNames,
 					simpleLabels: config.simpleLabels,
-					defaultLibraries: "general",
+					defaultLibraries: "MBT",
 					libraries: simpleDrawioLibrary(libs),
 					zoomFactor: config.zoomFactor,
 					globalVars: config.globalVars,
