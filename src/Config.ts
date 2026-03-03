@@ -513,6 +513,7 @@ export class DiagramConfig {
 			// Clear saved libraries when defaultLibraries changes
 			// This ensures defaultLibraries setting takes effect
 			drawioConfig.libraries = "MBT";
+			drawioConfig.customLibraries = [];
 			localStorage[".drawio-config"] = JSON.stringify(drawioConfig);
 		} catch (e) {
 			console.error(e);
