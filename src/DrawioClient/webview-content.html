@@ -370,6 +370,21 @@
 					return function (...args) {
 						editorUi = this;
 						const result = old.apply(this, args);
+						
+						// Set model prefix to avoid empty IDs
+						// Generate a unique prefix like drawio does
+						if (this.editor && this.editor.graph && this.editor.graph.model) {
+							// Generate a random GUID similar to Editor.guid()
+							const GUID_ALPHABET = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-_';
+							const GUID_LENGTH = 20;
+							let guid = '';
+							for (let i = 0; i < GUID_LENGTH; i++) {
+								guid += GUID_ALPHABET.charAt(Math.floor(Math.random() * GUID_ALPHABET.length));
+							}
+							this.editor.graph.model.prefix = guid + '-';
+							log('Set model.prefix to:', this.editor.graph.model.prefix);
+						}
+						
 						return result;
 					};
 				});
