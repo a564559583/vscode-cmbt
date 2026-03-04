@@ -383,7 +383,7 @@
 						"type": "object",
 						"default": {
 							"edgeStyle": "orthogonalEdgeStyle",
-							"rounded": "0",
+							"rounded": "1",
 							"jettySize": "auto",
 							"orthogonalLoop": "1",
 							"editable": 0,
